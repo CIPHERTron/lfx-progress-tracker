@@ -31,6 +31,6 @@ _Kyverno is a Kubernetes native policy engine where the policies are basically m
 * Channel: `#kyverno`
 
 ## 🗒️ Weekly Summary
-> To be updated soon 🚀
+* [Week 1](./weekly-update/week-one.md) (Sep 10 - Sep 17)
 
 
