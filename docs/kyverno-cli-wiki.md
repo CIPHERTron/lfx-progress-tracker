@@ -1,8 +1,17 @@
-## How to use Kyverno CLI in development mode?
+## How to develop Kyverno CLI locally?
 
 "_The Kyverno Command Line Interface (CLI) is designed to validate and test policy behavior to resources prior to adding them to a cluster. The CLI can be used in CI/CD pipelines to assist with the resource authoring process to ensure they conform to standards prior to them being deployed._"
 
 You can install and use the kyverno cli using [`krew`](https://kyverno.io/docs/kyverno-cli/#install-via-krew), [`yay`](https://kyverno.io/docs/kyverno-cli/#install-via-aur-archlinux) or by directly [building it from source](https://kyverno.io/docs/kyverno-cli/#building-the-cli-from-source). But here, we will see how to use kyverno CLI in development mode. Basically the usage remains the same except that here, you've to execute the Go package i.e. `cmd/cli/kubectl-kyverno/main.go` which essentially calls the kyverno CLI.
+
+### Prerequisite
+The only pre-requisite is that you need to have [Go](https://golang.org/) installed and set-up correctly in your local development workspace. Also, your Go version must be greater than `1.16` thus it is recommended to install the latest release. Here's a great set of resources that can help you set-up Go development in your local environment.
+
+* You can download the latest binary release of [Go](https://golang.org/) from [here](https://golang.org/dl/)
+* https://learn.gopherguides.com/courses/preparing-your-environment-for-go-development
+* If you're on a Windows machine, follow [this](https://learn.gopherguides.com/courses/preparing-your-environment-for-go-development/modules/setting-up-windows/)
+* If you're on a Mac or Linux machine, follow [this](https://learn.gopherguides.com/courses/preparing-your-environment-for-go-development/modules/setting-up-mac-linux/)
+
 
 ## Example
 Let's say you've to run the `test` command to `validate` the [Disallow Latest Tag](https://kyverno.io/policies/best-practices/disallow_latest_tag/disallow_latest_tag/) policy.
